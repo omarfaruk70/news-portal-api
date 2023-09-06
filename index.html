@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News portal API</title>
+    <title>News portal with API</title>
     <!-- Tailwind and DaisyUi cdn link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
@@ -45,7 +45,9 @@
             </div>
           </div>
           <div class="navbar-center">
-            <a class="btn btn-ghost normal-case text-xl">News Portal with API</a>
+            <a class="btn btn-ghost normal-case text-xl"
+              ><span class="text-violet-600">News Portal</span> with API</a
+            >
           </div>
           <div class="navbar-end">
             <button class="btn btn-ghost btn-circle">
@@ -88,15 +90,27 @@
           </div>
         </div>
       </nav>
+    </header>
+    <main>
       <!-- catagories tab -->
       <section class="container mt-5 mx-auto flex items-center justify-center">
-        <div id="tab-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-5">
-            
-          </div>
+        <div
+          id="tab-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+        ></div>
       </section>
-    </header>
-    <main></main>
+      <!-- news section show data -->
+      <section
+        id="news-sectiton"
+        class="mt-10 grid grid-cols-1 items-center justify-center md:grid-cols-2 lg:grid-cols-3 gap-5"
+      ></section>
+      <!-- show modal  -->
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="show_details" class="modal modal-bottom sm:modal-middle">
+        
+      </dialog>
+    </main>
     <footer></footer>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
